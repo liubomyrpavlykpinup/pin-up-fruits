@@ -33,4 +33,6 @@ class FruitImageAdapter : BaseAdapter() {
         }.root
     }
 
+
+
 }

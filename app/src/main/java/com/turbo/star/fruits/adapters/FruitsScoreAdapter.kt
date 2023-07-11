@@ -2,6 +2,7 @@ package com.turbo.star.fruits.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.turbo.star.databinding.ScoreListItemBinding
 import com.turbo.star.fruits.models.FruitScore
@@ -33,4 +34,7 @@ class FruitsScoreAdapter : RecyclerView.Adapter<FruitsScoreAdapter.ViewHolder>()
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(fruitsScore[position])
     }
+
+
+
 }

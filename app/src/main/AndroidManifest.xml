@@ -13,22 +13,27 @@
         android:theme="@style/Theme.PinUpFruits"
         tools:targetApi="31">
         <activity
-            android:name=".fruits.RapidActivity"
-            android:exported="false" />
+            android:name=".fruits.ScoreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.LoadingGame" />
         <activity
             android:name=".fruits.MatchActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.LoadingGame" />
         <activity
             android:name=".fruits.StartActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.LoadingGame">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

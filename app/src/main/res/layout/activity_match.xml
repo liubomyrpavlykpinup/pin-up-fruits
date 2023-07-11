@@ -8,18 +8,44 @@
     android:paddingHorizontal="10dp"
     tools:context=".fruits.MatchActivity">
 
-    <GridView
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_text"
+        android:fontFamily="@font/roboto_black"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="00:60"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.turbo.star.fruits.MatchFruitsGridView
         android:id="@+id/fruits_grid_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:horizontalSpacing="1dp"
         android:numColumns="5"
         android:verticalSpacing="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/timer_text_view" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/reload_fruits"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/slide_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruits_grid_view"
+        app:lottie_rawRes="@raw/reload_lottie" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/slide_box"
@@ -31,7 +57,6 @@
         android:paddingVertical="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fruits_grid_view"
         tools:listitem="@layout/score_list_item" />
 

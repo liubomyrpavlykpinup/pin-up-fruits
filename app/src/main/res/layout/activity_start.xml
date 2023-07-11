@@ -4,6 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    android:paddingHorizontal="50dp"
     tools:context=".fruits.StartActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_game_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_btn_try_again"
+        android:fontFamily="@font/roboto_black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/start_game"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rules_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_try_again"
+        android:padding="10dp"
+        android:text="Match Game Rules: Match identical elements by grouping adjacent ones horizontally or vertically, forming sets of three or more to clear them and earn points,reload board when the groups of elenents are over."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/exit_game_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_game_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit_game_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_btn_try_again"
+        android:fontFamily="@font/roboto_black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/exit_game"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
