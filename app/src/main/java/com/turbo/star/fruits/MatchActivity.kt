@@ -120,6 +120,8 @@ class MatchActivity : AppCompatActivity() {
         }
         return fruits
     }
+
+
     override fun onStart() {
         super.onStart()
 
@@ -127,6 +129,11 @@ class MatchActivity : AppCompatActivity() {
             fruitsRepository.clear()
         }
         timer.start()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        timer.cancel()
     }
 
     companion object {
