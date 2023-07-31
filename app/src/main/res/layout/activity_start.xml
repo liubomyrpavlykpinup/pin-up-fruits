@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_game"
     android:paddingHorizontal="50dp"
-    tools:context=".fruits.StartActivity">
+    tools:context=".StartActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/start_game_button"

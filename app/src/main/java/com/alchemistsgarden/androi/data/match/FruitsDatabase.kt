@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits.data.match
+package com.alchemistsgarden.androi.data.match
 
 import android.content.Context
 import androidx.room.Database

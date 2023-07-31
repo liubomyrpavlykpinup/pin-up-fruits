@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits.models
+package com.alchemistsgarden.androi.models
 
 import androidx.annotation.DrawableRes
 

@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits
+package com.alchemistsgarden.androi
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,23 +8,21 @@ import android.os.CountDownTimer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.airbnb.lottie.LottieAnimationView
-import com.alchemistsgarden.androi.R
-import com.alchemistsgarden.androi.databinding.ActivityMatchBinding
-import com.alchemistsgarden.androi.fruits.adapters.FruitImageAdapter
-import com.alchemistsgarden.androi.fruits.adapters.FruitsScoreAdapter
-import com.alchemistsgarden.androi.fruits.data.match.FruitScoreDao
-import com.alchemistsgarden.androi.fruits.data.match.FruitsDatabase
-import com.alchemistsgarden.androi.fruits.data.match.FruitsScoreRepository
-import com.alchemistsgarden.androi.fruits.data.match.LocalFruitsScoreRepository
-import com.alchemistsgarden.androi.fruits.models.FruitCell
-import com.alchemistsgarden.androi.fruits.models.FruitScore
+import com.alchemistsgarden.androi.data.match.FruitScore
+import com.alchemistsgarden.androi.adapters.FruitImageAdapter
+import com.alchemistsgarden.androi.adapters.FruitsScoreAdapter
+import com.alchemistsgarden.androi.data.match.FruitScoreDao
+import com.alchemistsgarden.androi.data.match.FruitsDatabase
+import com.alchemistsgarden.androi.data.match.FruitsScoreRepository
+import com.alchemistsgarden.androi.data.match.LocalFruitsScoreRepository
+import com.alchemistsgarden.androi.models.FruitCell
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 class MatchActivity : AppCompatActivity() {
 
     private val viewBinding by lazy {
-        ActivityMatchBinding.inflate(layoutInflater)
+        com.alchemistsgarden.androi.databinding.ActivityMatchBinding.inflate(layoutInflater)
     }
 
     private lateinit var scoreAdapter: FruitsScoreAdapter
@@ -73,7 +71,7 @@ class MatchActivity : AppCompatActivity() {
             override fun onMatch(count: Int, score: Double, image: Int) {
                 lifecycleScope.launch {
                     fruitsRepository.save(
-                        score = com.alchemistsgarden.androi.fruits.data.match.FruitScore(0, count, score, image)
+                        score = FruitScore(0, count, score, image)
                     )
                 }
             }
@@ -86,7 +84,13 @@ class MatchActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             fruitsRepository.getAll()
-                .map { list -> list.map { FruitScore(it.count, it.imageRes, it.score) } }
+                .map { list -> list.map {
+                    com.alchemistsgarden.androi.models.FruitScore(
+                        it.count,
+                        it.imageRes,
+                        it.score
+                    )
+                } }
                 .collect {
                     scoreAdapter.fruitsScore = it
                     scoreAdapter.notifyDataSetChanged()

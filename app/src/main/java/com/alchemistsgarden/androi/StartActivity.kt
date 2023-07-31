@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits
+package com.alchemistsgarden.androi
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

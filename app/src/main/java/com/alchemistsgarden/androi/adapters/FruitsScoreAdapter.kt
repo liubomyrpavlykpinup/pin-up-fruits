@@ -1,10 +1,10 @@
-package com.alchemistsgarden.androi.fruits.adapters
+package com.alchemistsgarden.androi.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.alchemistsgarden.androi.databinding.ScoreListItemBinding
-import com.alchemistsgarden.androi.fruits.models.FruitScore
+import com.alchemistsgarden.androi.models.FruitScore
 
 class FruitsScoreAdapter : RecyclerView.Adapter<FruitsScoreAdapter.ViewHolder>() {
 

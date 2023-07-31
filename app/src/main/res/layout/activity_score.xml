@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_score"
     android:paddingHorizontal="25dp"
-    tools:context=".fruits.ScoreActivity">
+    tools:context=".ScoreActivity">
 
     <LinearLayout
         android:id="@+id/linear_layout"

@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits.data.match
+package com.alchemistsgarden.androi.data.match
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

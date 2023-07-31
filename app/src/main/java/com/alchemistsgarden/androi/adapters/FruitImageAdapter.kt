@@ -1,4 +1,4 @@
-package com.alchemistsgarden.androi.fruits.adapters
+package com.alchemistsgarden.androi.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import com.alchemistsgarden.androi.R
 import com.alchemistsgarden.androi.databinding.FruitItemBinding
-import com.alchemistsgarden.androi.fruits.models.FruitCell
+import com.alchemistsgarden.androi.models.FruitCell
 
 class FruitImageAdapter : BaseAdapter() {
 

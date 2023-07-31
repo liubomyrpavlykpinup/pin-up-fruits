@@ -1,16 +1,16 @@
-package com.alchemistsgarden.androi.fruits
+package com.alchemistsgarden.androi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alchemistsgarden.androi.databinding.ActivityScoreBinding
-import com.alchemistsgarden.androi.fruits.adapters.FruitsScoreAdapter
-import com.alchemistsgarden.androi.fruits.data.match.FruitScoreDao
-import com.alchemistsgarden.androi.fruits.data.match.FruitsDatabase
-import com.alchemistsgarden.androi.fruits.data.match.FruitsScoreRepository
-import com.alchemistsgarden.androi.fruits.data.match.LocalFruitsScoreRepository
-import com.alchemistsgarden.androi.fruits.models.FruitScore
+import com.alchemistsgarden.androi.adapters.FruitsScoreAdapter
+import com.alchemistsgarden.androi.data.match.FruitScoreDao
+import com.alchemistsgarden.androi.data.match.FruitsDatabase
+import com.alchemistsgarden.androi.data.match.FruitsScoreRepository
+import com.alchemistsgarden.androi.data.match.LocalFruitsScoreRepository
+import com.alchemistsgarden.androi.models.FruitScore
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
