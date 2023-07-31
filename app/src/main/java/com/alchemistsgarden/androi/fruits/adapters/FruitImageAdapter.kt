@@ -1,12 +1,12 @@
-package com.turbo.star.fruits.adapters
+package com.alchemistsgarden.androi.fruits.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import com.turbo.star.R
-import com.turbo.star.databinding.FruitItemBinding
-import com.turbo.star.fruits.models.FruitCell
+import com.alchemistsgarden.androi.R
+import com.alchemistsgarden.androi.databinding.FruitItemBinding
+import com.alchemistsgarden.androi.fruits.models.FruitCell
 
 class FruitImageAdapter : BaseAdapter() {
 

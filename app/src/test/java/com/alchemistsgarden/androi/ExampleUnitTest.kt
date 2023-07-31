@@ -1,4 +1,4 @@
-package com.turbo.star
+package com.alchemistsgarden.androi
 
 import org.junit.Test
 

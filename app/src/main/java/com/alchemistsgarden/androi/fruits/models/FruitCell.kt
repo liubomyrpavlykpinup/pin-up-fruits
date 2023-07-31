@@ -1,4 +1,4 @@
-package com.turbo.star.fruits.models
+package com.alchemistsgarden.androi.fruits.models
 
 import androidx.annotation.DrawableRes
 

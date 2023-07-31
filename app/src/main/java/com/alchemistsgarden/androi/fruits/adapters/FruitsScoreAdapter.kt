@@ -1,11 +1,10 @@
-package com.turbo.star.fruits.adapters
+package com.alchemistsgarden.androi.fruits.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.turbo.star.databinding.ScoreListItemBinding
-import com.turbo.star.fruits.models.FruitScore
+import com.alchemistsgarden.androi.databinding.ScoreListItemBinding
+import com.alchemistsgarden.androi.fruits.models.FruitScore
 
 class FruitsScoreAdapter : RecyclerView.Adapter<FruitsScoreAdapter.ViewHolder>() {
 

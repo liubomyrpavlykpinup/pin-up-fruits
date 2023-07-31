@@ -1,4 +1,4 @@
-package com.turbo.star.fruits
+package com.alchemistsgarden.androi.fruits
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,8 +11,8 @@ import android.view.View
 import android.widget.GridView
 import android.widget.ListAdapter
 import androidx.annotation.DrawableRes
-import com.turbo.star.fruits.adapters.FruitImageAdapter
-import com.turbo.star.fruits.models.FruitCell
+import com.alchemistsgarden.androi.fruits.adapters.FruitImageAdapter
+import com.alchemistsgarden.androi.fruits.models.FruitCell
 
 private data class MatchGameModel(
     val view: View,

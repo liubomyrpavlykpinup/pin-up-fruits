@@ -1,4 +1,4 @@
-package com.turbo.star.fruits
+package com.alchemistsgarden.androi.fruits
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,17 +8,16 @@ import android.os.CountDownTimer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.airbnb.lottie.LottieAnimationView
-import com.turbo.star.R
-import com.turbo.star.databinding.ActivityMatchBinding
-import com.turbo.star.fruits.adapters.FruitImageAdapter
-import com.turbo.star.fruits.adapters.FruitsScoreAdapter
-import com.turbo.star.fruits.data.match.FruitScoreDao
-import com.turbo.star.fruits.data.match.FruitsDatabase
-import com.turbo.star.fruits.data.match.FruitsScoreRepository
-import com.turbo.star.fruits.data.match.LocalFruitsScoreRepository
-import com.turbo.star.fruits.models.FruitCell
-import com.turbo.star.fruits.models.FruitScore
-import kotlinx.coroutines.Dispatchers
+import com.alchemistsgarden.androi.R
+import com.alchemistsgarden.androi.databinding.ActivityMatchBinding
+import com.alchemistsgarden.androi.fruits.adapters.FruitImageAdapter
+import com.alchemistsgarden.androi.fruits.adapters.FruitsScoreAdapter
+import com.alchemistsgarden.androi.fruits.data.match.FruitScoreDao
+import com.alchemistsgarden.androi.fruits.data.match.FruitsDatabase
+import com.alchemistsgarden.androi.fruits.data.match.FruitsScoreRepository
+import com.alchemistsgarden.androi.fruits.data.match.LocalFruitsScoreRepository
+import com.alchemistsgarden.androi.fruits.models.FruitCell
+import com.alchemistsgarden.androi.fruits.models.FruitScore
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
@@ -74,7 +73,7 @@ class MatchActivity : AppCompatActivity() {
             override fun onMatch(count: Int, score: Double, image: Int) {
                 lifecycleScope.launch {
                     fruitsRepository.save(
-                        score = com.turbo.star.fruits.data.match.FruitScore(0, count, score, image)
+                        score = com.alchemistsgarden.androi.fruits.data.match.FruitScore(0, count, score, image)
                     )
                 }
             }

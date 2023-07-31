@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.turbo.star.fruits.MatchFruitsGridView
+    <com.alchemistsgarden.androi.fruits.MatchFruitsGridView
         android:id="@+id/fruits_grid_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

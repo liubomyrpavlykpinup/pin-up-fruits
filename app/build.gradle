@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.turbo.star'
+    namespace 'com.alchemistsgarden.androi'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.turbo.star"
+        applicationId "com.alchemistsgarden.androi"
         minSdk 24
         targetSdk 33
         versionCode 1

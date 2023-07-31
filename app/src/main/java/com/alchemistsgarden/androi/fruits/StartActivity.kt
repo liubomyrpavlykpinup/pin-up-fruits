@@ -1,10 +1,9 @@
-package com.turbo.star.fruits
+package com.alchemistsgarden.androi.fruits
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.turbo.star.R
-import com.turbo.star.databinding.ActivityStartBinding
+import com.alchemistsgarden.androi.databinding.ActivityStartBinding
 
 class StartActivity : AppCompatActivity() {
 
